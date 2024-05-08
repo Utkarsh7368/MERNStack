@@ -8,7 +8,7 @@ export default function Form() {
     const collectData = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3000/', {
+            const response = await fetch('https://mern-stack-m5vz.vercel.app/', {
                 method: 'POST',
                 body: JSON.stringify({ name, email, password }),
                 headers: {
