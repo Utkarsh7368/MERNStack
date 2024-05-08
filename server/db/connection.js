@@ -1,2 +1,2 @@
 const mongoose =require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/User-Input');
+mongoose.connect('mongodb+srv://pg491467:<password>@mernstack.e2lamat.mongodb.net/?retryWrites=true&w=majority&appName=MernStack');
