@@ -9,7 +9,11 @@ const bodyParser = require('body-parser');
 
 require("./db/connection");
 
-app.use(cors());
+app.use(cors({
+  origin:["https://deploy-mern-1whq.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true
+}));
 app.use(bodyParser.json());
 
 const port = process.env.PORT || 3000;
