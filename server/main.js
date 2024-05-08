@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 require("./db/connection");
 
 app.use(cors({
-  origin:["https://mern-frontend-peach.vercel.app/"],
+  origin:["https://mern-frontend-peach.vercel.app"],
   methods:["POST","GET"],
   credentials:true
 }));
